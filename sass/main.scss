@@ -2,6 +2,7 @@
 @import "./utils/reset";
 @import "./utils/hidden";
 @import "./utils/common";
+@import "./utils/mixins";
 
 ///////
 
@@ -29,5 +30,4 @@
 
 
 @import "./components/filters";
-@import "./components/portfolio";
 @import "./components/portfolio";

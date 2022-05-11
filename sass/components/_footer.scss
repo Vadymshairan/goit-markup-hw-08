@@ -13,9 +13,8 @@
 }
 
 .footer__link {
-    font-style: normal; 
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(null, 16px, 1.62, null);
+    font-style: normal;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 
@@ -39,10 +38,8 @@
 .social {
     padding-left: 70px;
 }
-.social__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+.footer__title {
+    @include font(700, 14px, 1.14, null);
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;

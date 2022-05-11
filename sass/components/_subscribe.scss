@@ -10,22 +10,14 @@
     flex-direction: column;
     margin-right: 12px;
   
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--primary-white-color);
 }
   
 .subscribe-form__input {
     margin-top: 20px;
     padding: 15px 16px;
     width: 358px;
-  
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    
+    @include font(null, 16px, 1.25, null);
   
     background-color: transparent;
     color: rgba(255, 255, 255, 0.6);
