@@ -20,7 +20,7 @@
   }
   
   .features-list {
-    @media screen and (min-width:768px) {
+    @include tablet {
       display: flex;
       flex-wrap: wrap;
       margin-right: -30px;
@@ -28,11 +28,11 @@
     }
   
   .features-item {
-    @media screen and (min-width:768px) {
+    @include tablet {
       flex-basis: calc(100% / 2 - 30px);
       margin-right: 30px;      
     }
-    @media screen and (min-width:1200px) {
+    @include desktop {
       flex-basis: calc(100% / 4 - 30px);
       margin-right: 30px;
     }
