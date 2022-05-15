@@ -18,7 +18,8 @@
 
   @include tablet {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    margin-right: -30px;    
     }
 }
 
