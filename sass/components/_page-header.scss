@@ -1,12 +1,25 @@
-.page-header {
-  border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 0 auto;
+  // width: 100%;
 
-  &--position {
-    display: flex;
-    align-items: center;
+  @include mobile {
+    padding: 16px 15px;
   }
+
+  @include tablet {
+    padding: 25px 15px;
+  }
+
+  // @include desktop {
+  //   padding: 25px 215px;
+  // }
+
+
+  border-bottom: 1px solid #ececec;
+  
 }
 
 

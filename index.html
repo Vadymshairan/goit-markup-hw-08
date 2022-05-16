@@ -16,11 +16,11 @@
 
 <body class="body">
   <!--Шапка Сайта-->
-  <!-- <header class="page-header">
-    <div class="container page-header--position">
-      <a href="./index.html" class="logo logo--header">Web<span class="logo--dark">Studio</span></a> -->
+  <header class="page-header">
+    <div class="container header">
+      <a href="./index.html" class="logo logo--header">Web<span class="logo--dark">Studio</span></a>
       <!-- navigation section-->
-      <!-- <nav class="header-nav">
+      <nav class="header-nav">
         <ul class="header-nav__list list">
           <li class="header-nav__item">
             <a href="./index.html" class="header-nav__link header-nav__link--current link">Студия</a>
@@ -32,9 +32,9 @@
             <a href="#" class="header-nav__link link">Контакты</a>
           </li>
         </ul>
-      </nav> -->
+      </nav>
       <!-- contacts section-->
-      <!-- <ul class="contacts-header contacts list">
+      <ul class="contacts-header list">
         <li class="contacts-header__item">
           <a class="contacts-header__link link" href="mailto:info@devstudio.com">
             <svg class="contacts-header__icon" width="16" height="12">
@@ -53,7 +53,7 @@
         </li>
       </ul>
     </div>
-  </header> -->
+  </header>
 
   <!--Мейн секция-->
   <main>
@@ -429,7 +429,7 @@
   </footer> -->
 
   <!-- Модальное окно  is-hidden-->
-  <div class="backdrop" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="close-btn" data-modal-close>
         <svg class="close" width="18" height="18">
@@ -483,13 +483,9 @@
             value="agree"
             id="modal-chek"
           />
-
-          <!-- <span class="checkbox-icon">
-            <svg class="check" width="16" height="15">
-            <use href="./images/icons.svg#checked"></use></svg>
-          </span> -->
-          
-          <label for="modal-chek" class="checkbox-field"><span class="checkbox-icon">
+         
+          <label for="modal-chek" class="checkbox-field">
+            <span class="checkbox-icon">
             <svg class="check" width="16" height="15">
             <use href="./images/icons.svg#checked"></use></svg>
           </span>Соглашаюсь с рассылкой и принимаю&nbsp<a href="#" target="_blank" class="form-link">Условия договора</a>

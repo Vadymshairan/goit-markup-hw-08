@@ -1,11 +1,15 @@
 .logo {
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
-    @include font(700, 26px, 1.19, null);
+
+    @include font(700, 24px, 1.17, null);
     text-decoration: none;
+    @include desktop {
+      @include font(700, 26px, 1.19, null);
+    }
   
     &--header {  
-      margin-right: 93px;
+      // margin-right: 93px;
     }
   
     &--dark {
