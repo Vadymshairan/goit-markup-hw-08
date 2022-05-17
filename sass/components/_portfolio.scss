@@ -1,3 +1,13 @@
+.portfolio {
+    margin-bottom: -30px;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;    
+      }
+}
+
 .portfolio .title {
     @include font(700, 18px, 2, 0.06em);
     color: var(--title-text-color);
@@ -8,15 +18,20 @@
     line-height: 1.87;    
 }
 
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-}
-
 .portfolio-item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-right: 30px;
+    // flex-basis: calc(100% / 3 - 30px);
+    // margin-right: 30px;
+    margin-bottom: 30px;
+  
+    @include tablet {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-right: 30px;      
+    }
+  
+    @include desktop {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+
     
     &:hover,
     &:focus {
@@ -41,7 +56,7 @@
 
 .portfolio-desc {
     position: absolute;
-    top: 0;
+    top: 1;
     left: 0;
     width: 100%;
     height: 100%;

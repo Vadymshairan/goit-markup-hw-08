@@ -27,7 +27,7 @@
   &--current::after {
     content: '';
     position: absolute;
-    bottom: -1px; 
+    bottom: -5px; 
     left: 0;
       
     display: block;
@@ -36,6 +36,10 @@
   
     background: #2196f3;
     border-radius: 2px;
+
+    @include desktop {
+      bottom: -1px; 
+    }
   }
 
   &:focus,
