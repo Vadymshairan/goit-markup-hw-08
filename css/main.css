@@ -906,16 +906,28 @@ textarea {
 }
 
 .filters {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    padding-bottom: 50px;
+  }
 }
 
 .filters__item {
   display: flex;
+  margin-bottom: 15px;
 }
-.filters__item + .filters__item {
-  margin-left: 8px;
+.filters__item:not(last-child) {
+  margin-right: 8px;
 }
 
 .filters__button {
@@ -994,11 +1006,11 @@ textarea {
 
 .portfolio-desc {
   position: absolute;
-  top: 1;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   font-size: 18px;
   line-height: 1.56;
   color: var(--primary-white-color);
