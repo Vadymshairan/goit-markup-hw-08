@@ -1,4 +1,12 @@
- .social__list {
+.social {
+    margin-bottom: 60px;
+
+    @include desktop {
+        padding-top:12px;
+        margin-bottom: 0;
+    }
+} 
+.social__list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,4 +49,8 @@
 
 .footer-social-icon {
     fill: var(--primary-white-color);
+}
+
+.social__list--footer {
+    margin-top: 20px;
 }
