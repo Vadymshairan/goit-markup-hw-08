@@ -1,2 +1,2 @@
-# goit-markup-hw-07
-Домашнее задание #7 GoIT | HTML+CSSBootcamp
+# goit-markup-hw-08
+Домашнее задание #8 GoIT | HTML+CSSBootcamp
