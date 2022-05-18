@@ -23,6 +23,12 @@
         width: 528px;
         height: auto;
     }
+
+    @media only screen and (max-height: 480px) {
+        top: 0;
+        transform: translateX(-50%)
+    }
+     
 }
   
 .close {

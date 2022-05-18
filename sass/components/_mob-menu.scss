@@ -1,0 +1,88 @@
+.container-mob-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.mob-menu {
+    position: fixed;   
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 10;
+
+
+    padding: 10px 15px 48px 40px;
+
+    background-color: #ffffff;
+}
+
+.mob-contact {
+    margin-bottom: 64px;
+}
+
+.mob-contacts__list {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }    
+}
+
+.mob-nav__link {
+    @include font(500, 40px, 1.76, 0.02em);
+    color: var(--title-text-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mob-contacts__link {
+    @include font(500, 24px, 1.17, 0.02em);
+    color: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.mob-contacts__list .mob-contacts__link:hover,
+.mob-contacts__list .mob-contacts__link:focus {
+    @include font(500, 34px, 1.18, 0.02em);
+    color: var(--accent-color);
+}
+
+.mob-soc {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mob-soc__list {
+    &:not(:last-child) {
+        margin-right: 5px; 
+        &::after {
+        content: '';
+        margin-left: 5px;
+
+        border: 1px solid rgba(33, 33, 33, 0.2);        
+        }
+    }
+
+}
+
+.mob-soc__link {
+    @include font(500, 18px, 1.22, 0.02em);
+    color: var(--accent-color);
+}
+
+// Кнопки мобильного меню
+.menu-open-btn, .menu-close-btn {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin-left: auto;
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+  }
+  
