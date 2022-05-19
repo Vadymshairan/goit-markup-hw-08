@@ -5,7 +5,7 @@
     width: 100%;
     
     @include tablet {
-        // justify-content: center;
+        justify-content: center;
         align-items: center;
     }
 
@@ -14,7 +14,6 @@
         flex-direction: row;
         margin-left: auto;
         width: 570px;
-
     }
 }
   

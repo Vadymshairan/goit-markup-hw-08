@@ -7,7 +7,6 @@
 .footer--position {
     display: flex; 
     flex-direction: column;
-    align-items: center;
 
     @include desktop    {
         flex-direction: row;
@@ -17,19 +16,12 @@
 }
 
 .footer__logo-contacts-wrap {
-    // display: flex; 
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    
-
-    margin-bottom: 60px;
-    @include tablet {
-        margin-right: 165px;
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
     }
+   
     @include desktop {
         margin-right: 70px;
-        margin-bottom: 0;
     }
 
     @media screen and (max-width:1199px) {
@@ -39,8 +31,20 @@
 
 .footer__soc-logo-contacts-wrap {
     @include tablet {
-        display: flex;
-        }
+        display: flex;     
+    }
+    @include desktop {
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: space-around;
+        width: 100%;   
+    }
+
+    @media screen and (max-width:1199px) {
+        margin-bottom: 60px;
+    }
 }
 
 .contacts-footer {
